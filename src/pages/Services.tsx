@@ -64,8 +64,8 @@ const Services = () => {
                 </div>
                 <div className="md:w-1/2">
                   <h2 className="text-3xl font-serif font-bold mb-4">{service.title}</h2>
-                  <p className="text-gray-700 mb-6">{service.description}</p>
-                  <Button className="bg-gray-800 hover:bg-gray-700">Learn More</Button>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">{service.description}</p>
+                  <Button className="bg-gray-800 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">Learn More</Button>
                 </div>
               </div>
             ))}
