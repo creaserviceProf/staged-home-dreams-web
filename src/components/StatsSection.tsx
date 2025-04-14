@@ -1,14 +1,33 @@
 
 import React from 'react';
-
-const stats = [
-  { id: 1, value: '250+', label: 'Properties Staged' },
-  { id: 2, value: '15', label: 'Days Average Time on Market' },
-  { id: 3, value: '10%', label: 'Higher Selling Price' },
-  { id: 4, value: '98%', label: 'Client Satisfaction' },
-];
+import { useTheme } from './ThemeProvider';
 
 const StatsSection = () => {
+  const { language } = useTheme();
+  
+  const stats = [
+    { 
+      id: 1, 
+      value: '250+', 
+      label: language === "en" ? 'Properties Staged' : 'Propriétés Mises en Scène' 
+    },
+    { 
+      id: 2, 
+      value: '15', 
+      label: language === "en" ? 'Days Average Time on Market' : 'Jours en Moyenne sur le Marché' 
+    },
+    { 
+      id: 3, 
+      value: '10%', 
+      label: language === "en" ? 'Higher Selling Price' : 'Prix de Vente Plus Élevé' 
+    },
+    { 
+      id: 4, 
+      value: '98%', 
+      label: language === "en" ? 'Client Satisfaction' : 'Satisfaction Client' 
+    },
+  ];
+
   return (
     <div className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">

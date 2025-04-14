@@ -3,17 +3,24 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactSection from '../components/ContactSection';
+import { useTheme } from '../components/ThemeProvider';
 
 const Contact = () => {
+  const { language } = useTheme();
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
         <div className="bg-gray-800 text-white py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl font-serif font-bold mb-4 text-center">Contact Us</h1>
+            <h1 className="text-4xl font-serif font-bold mb-4 text-center">
+              {language === "en" ? "Contact Us" : "Contactez-Nous"}
+            </h1>
             <p className="text-xl text-center max-w-3xl mx-auto">
-              Have questions or ready to transform your property? We're here to help.
+              {language === "en"
+                ? "Have questions or ready to transform your property? We're here to help."
+                : "Vous avez des questions ou êtes prêt à transformer votre propriété ? Nous sommes là pour vous aider."}
             </p>
           </div>
         </div>
@@ -29,7 +36,7 @@ const Contact = () => {
             allowFullScreen 
             loading="lazy" 
             referrerPolicy="no-referrer-when-downgrade"
-            title="Office Location"
+            title={language === "en" ? "Office Location" : "Emplacement du Bureau"}
           ></iframe>
         </div>
       </main>
