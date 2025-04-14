@@ -1,0 +1,23 @@
+body {
+    /* existing styles... */
+    background: linear-gradient(to right, maroon, green);
+    color: white; /* Optional: Change text color for better contrast */
+    /* other styles... */
+}
+
+.elegant-theme {
+    background: linear-gradient(to right, maroon, green);
+    color: white; /* Optional: Change text color for better contrast */
+    padding: 20px; /* Optional: Add some padding */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.bg-blue-500 {
+    background-color: maroon; /* Change blue background to maroon */
+}
+
+.text-blue-500 {
+    color: green; /* Change blue text to green */
+}
+
+/* Add any other specific blue styles you want to change */ 
