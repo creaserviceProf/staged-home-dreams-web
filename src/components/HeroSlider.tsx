@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 const slides = [
   {
     id: 1,
-    image: "/lovable-uploads/b63852fe-f54e-4048-8d3f-4d4628cf8b6e.png",
+    image: "/lovable-uploads/5780d895-86f6-4791-8f09-c1e2f21ac7f4.png",
     title: "Transform Your Space",
     subtitle: "Professional staging to showcase your property's full potential"
   },
